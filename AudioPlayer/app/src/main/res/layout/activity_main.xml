@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Main_Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/playBar2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60sp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@color/Play_Background">-->
+<!--    <TextView-->
+<!--        android:id="@+id/playItemName2"-->
+<!--        android:layout_height="35sp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:text="Играет..."-->
+<!--        android:textSize="30sp"-->
+<!--        android:marqueeRepeatLimit="marquee_forever"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:scrollHorizontally="true"-->
+<!--        android:layout_toRightOf="@id/imgsongmain2"-->
+<!--        android:layout_toLeftOf="@id/mainextbtn2">-->
+
+<!--    </TextView>-->
+<!--        <TextView-->
+<!--            android:id="@+id/playItemArtist2"-->
+<!--            android:layout_height="25sp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_below="@+id/playItemName2"-->
+<!--            android:text="Играет..."-->
+<!--            android:textSize="20dp"-->
+<!--            android:marqueeRepeatLimit="marquee_forever"-->
+<!--            android:ellipsize="marquee"-->
+<!--            android:scrollHorizontally="true"-->
+<!--            android:layout_toRightOf="@id/imgsongmain2"-->
+<!--            android:layout_toLeftOf="@id/mainextbtn2">-->
+
+<!--        </TextView>-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgsongmain2"-->
+<!--            android:layout_width="60sp"-->
+<!--            android:src="@drawable/diskyre"-->
+<!--            android:layout_height="60sp"-->
+<!--            android:layout_alignParentStart="true">-->
+
+<!--        </ImageView>-->
+<!--    <Button-->
+<!--        android:id="@+id/mainextbtn2"-->
+<!--        android:layout_width="60sp"-->
+<!--        android:layout_height="60sp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@drawable/ic_next"-->
+<!--        >-->
+
+<!--    </Button>-->
+
+<!--    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/RelLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0sp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:divider="@color/teal_200"
+            android:dividerHeight="0.0sp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

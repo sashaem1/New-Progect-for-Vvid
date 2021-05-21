@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Main_Background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_marginBottom="8dp"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:src="@drawable/diskk">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            >
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_width="240sp"
+                android:layout_height="wrap_content">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/txtsstart"
+                android:layout_toLeftOf="@id/seekbar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="0dp"
+                android:textSize="14sp"
+                android:text="0:00"
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtsstop"
+                android:layout_toRightOf="@id/seekbar"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="0dp"
+                android:textSize="14sp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/txtsname"
+                android:layout_marginTop="20dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:text="Song Name"
+                android:textColor="@color/teal_200"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:id="@+id/txtsartist"
+                android:layout_margin="0dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="00dp"
+                android:layout_below="@+id/txtsname"
+                android:singleLine="true"
+                android:text="Song Name"
+                android:textColor="@color/teal_200"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/ic_pause"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/nextbtn"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@id/playbtn"
+                android:background="@drawable/ic_next"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/prevbtn"
+
+                android:layout_marginTop="100dp"
+                android:layout_toLeftOf= "@id/playbtn"
+                android:background="@drawable/ic_previous"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/loopbtn"
+                android:layout_marginTop="118dp"
+                android:layout_toLeftOf= "@id/prevbtn"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/ic_loop"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/timerbtn"
+                android:layout_marginTop="118dp"
+                android:layout_toRightOf="@+id/nextbtn"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/ic_timer"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+
+            </Button>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

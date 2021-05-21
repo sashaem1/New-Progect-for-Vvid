@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50sp"
+    android:background="@color/Play_Background">
+    <ImageButton
+        android:id="@+id/searchbtn"
+        android:layout_alignParentLeft="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@drawable/ic_search">
+
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/acceptserch"
+        android:layout_alignParentRight="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:background="@drawable/ic_check_box">
+
+    </ImageButton>
+
+    <EditText
+        android:id="@+id/txtedit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/searchbtn"
+        android:layout_toLeftOf="@+id/acceptserch"
+        android:background="@color/cardview_dark_background"
+        android:imeOptions="actionDone"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+    </EditText>
+
+</RelativeLayout>

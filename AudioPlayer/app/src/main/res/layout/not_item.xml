@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/Main_Background">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:text="AudioPlayer"
+            android:layout_toRightOf="@+id/imgTitle">
+
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imgTitle"
+            android:src="@drawable/disk3"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtSongName"
+        android:layout_width="match_parent"
+        android:text="Name"
+        android:layout_marginHorizontal="15dp"
+        android:textSize="24dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/title"
+        android:textColor="@color/cardview_light_background">
+
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtSongArtist"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15dp"
+        android:text="Artist"
+        android:textSize="18dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtSongName"
+        android:textColor="@color/cardview_light_background">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/playbtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtSongArtist"
+
+        android:background="@drawable/ic_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/nextbtn2"
+        android:layout_toRightOf="@id/playbtn2"
+        android:layout_below="@+id/txtSongArtist"
+        android:background="@drawable/ic_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/prevbtn2"
+        android:layout_below="@+id/txtSongArtist"
+        android:layout_toLeftOf= "@id/playbtn2"
+        android:background="@drawable/ic_previous"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </Button>
+
+</RelativeLayout>
